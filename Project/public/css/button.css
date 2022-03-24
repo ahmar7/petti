@@ -1,0 +1,97 @@
+.btnLogin {
+  background: transparent;
+  color: #fff;
+  margin: auto 10px;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  transition: 1s;
+}
+
+.BtnDashboard {
+  background: crimson;
+  display: block;
+  width: 100%;
+  margin: auto 20px;
+  font-weight: 600;
+  transition: 1s;
+}
+
+.BtnViewPlans,
+.btnBodyLogin:hover {
+  background: transparent;
+  border: 1px solid crimson;
+  margin: auto 20px;
+  font-weight: 600;
+  transition: 1s;
+  display: block;
+  padding-right: 0 !important;
+  color: crimson;
+  border-radius: 10px;
+  /* width: 100%; */
+  width: 111px;
+  transition: 1s;
+}
+/* .m-auto .btn{
+    padding-right: 0 !important;
+} */
+@media (max-width: 1049px) {
+  .BtnViewPlans {
+    width: 111px;
+    padding-right: 0px !important;
+  }
+}
+@media (max-width: 990px) {
+  .BtnViewPlans {
+    width: 100% !important;
+    padding-right: 0px !important;
+  }
+}
+.BtnViewPlans:hover,
+.btnBodyLogin {
+  background: crimson;
+  margin: auto 20px;
+  font-weight: 600;
+  transition: 1s;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.btnLogin:hover {
+  background: crimson;
+  transition: 1s;
+}
+
+.BtnDashboard:hover {
+  background: transparent;
+  color: #fff;
+  transition: 1s;
+}
+
+.BtnGetStarted {
+  color: crimson;
+  border: 1px solid crimson;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  position: relative;
+}
+
+.BtnGetStarted::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  position: absolute;
+  right: 20px;
+}
+
+.BtnGetStarted:hover {
+  background: crimson;
+  color: #fff;
+}
+
+.btn:hover {
+  box-shadow: 0rem 0rem 2rem rgba(250, 20, 20, 0.5) !important;
+}

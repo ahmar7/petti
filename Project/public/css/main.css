@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .bgdark{
+    background-color: black;
+} */
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin: auto 15px;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+.nav-link.active {
+  color: crimson !important;
+  transition: 1s;
+}
+
+.HomePageMainBanner {
+  background: url("../img/HomePageSection01Bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 90px 20px;
+  height: 100%;
+}
+
+.MainBannerText h2,
+h1 {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+#section02 {
+  background: crimson;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.SectionTwoMainHeading h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card.MainCard {
+  background: #191e28;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+.ServicesCard {
+  border: none;
+  height: 100%;
+}
+
+img.dots {
+  width: 100%;
+  position: absolute;
+  max-width: 270px;
+  top: 30px;
+  right: 50px;
+  z-index: 999;
+}
+
+img.Network {
+  width: 100%;
+  max-width: 130px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  z-index: 0;
+  -webkit-animation: rotation 24s infinite linear;
+}
+
+.PricingSection {
+  background: url("../img/HomePageSection03Bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 90px 20px;
+  height: 100%;
+}
+
+.PlanCard .card {
+  background: #283039f2;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.Amount {
+  color: crimson;
+  margin: 10px auto;
+}
+
+.CardUl ul {
+  list-style: none;
+  padding: 20px 10px;
+}
+
+.CardUl ul {
+  list-style: none;
+  padding: 20px 0px 10px 40px;
+  color: #6c757d;
+}
+
+.CardUl ul li {
+  margin: 10px auto;
+  font-weight: 500;
+  position: relative;
+}
+
+.CardUl ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  position: absolute;
+  left: -25px;
+  color: #00ff93;
+  font-size: 0.6rem;
+  top: 2px;
+  background: rgb(0, 255, 147, 0.2);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 50px;
+}
+
+.MostPopular {
+  background: linear-gradient(90deg, crimson 4.84%, crimson 57.26%);
+  box-shadow: 0px 4px 9px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+  margin: 20px auto;
+}
+
+.SocialCard,
+.accordion-item,
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background: #2c353d;
+  border: none;
+  border-radius: 20px !important;
+}
+
+.accordion-item,
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+}
+
+a.SocialLinks {
+  font-size: 2rem;
+  color: #fff;
+  background: crimson;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+
+footer {
+  background: crimson;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.links {
+  border-right: 1px solid grey;
+  height: 100%;
+}
+
+.Sociallinks ul,
+.links ul {
+  padding: 0;
+  list-style: none;
+}
+
+.Sociallinks ul li a,
+.links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.LargeLogo,
+.HomePageImage02,
+.HomePageImage03 {
+  width: 150px !important;
+  margin-bottom: 100px;
+  transition: all 0.4s ease;
+  animation: jumping 2s ease-out 0s infinite;
+}
+@media (max-width: 991px) {
+  .HomePageImage02,
+  .HomePageImage03 {
+    width: 30% !important;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    transition: all 0.4s ease;
+    animation: jumping 2s ease-out 0s infinite;
+  }
+}
+.EmailAddress,
+.EmailAddress:focus {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px !important;
+  color: #fff !important;
+}
+
+.EmailAddress::placeholder {
+  color: #fff !important;
+}
+
+.BtnSumbit {
+  position: absolute !important;
+  right: 0px;
+  background: #fff;
+  border-radius: 50px !important;
+  color: crimson;
+}
+
+@keyframes jumping {
+  50% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, -0);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .BtnViewPlans:hover,
+  .btnBodyLogin,
+  .BtnViewPlans,
+  .btnBodyLogin:hover,
+  .btnLogin,
+  .BtnDashboard {
+    margin: 10px auto !important;
+  }
+  .card.MainCard {
+    position: relative;
+    z-index: 9;
+  }
+  img.dots {
+    z-index: 0;
+  }
+  .links {
+    border-right: 0px solid grey;
+  }
+  .nav-link {
+    margin: auto !important;
+    text-align: center;
+  }
+  .navbar-nav {
+    margin-left: 0 !important;
+  }
+  img.Network {
+    max-width: 90px;
+    bottom: -40px;
+    z-index: 10;
+  }
+}
